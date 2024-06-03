@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Wizardgame</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      #container {
+        width: 100%;
+        height: 100%;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <script type="module">
+      import { App } from "./app.js";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const app = new App();
+        window.app = app;
+      });
+    </script>
+  </body>
+</html>
